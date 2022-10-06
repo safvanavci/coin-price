@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="icon" href="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=023"/>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Coin Prices</title>
+</head>
+<body>
+    <div class="w-4/5 mx-auto justify-between flex mt-10">
+        <div class="w-96 pt-20">
+            <h1 class="text-5xl font-['Silkscreen'] text-bc">Coin Prices</h1>
+            <p class="py-5 font-mono">
+                Kripto dünyasını yakından takip edenlerden biriysen bu sayfada
+                kripto paraların güncel fiyatlarını takip edebilirsin.Aşağıya 
+                fiyatını merak ettiğiniz coinin adını yazıp ara butonuna basmanız yeterli.
+            </p>
+        </div>
+        <div>
+            <img src="img.jpg" class="w-wlg lg:inline hidden hidden">
+        </div>
+    </div>
+    <div class="w-4/5 py-20 mx-auto flex justify-between flex-wrap gap-10 ">
+      <form id="search" class="mx-auto lg:mx-0">
+        <input class="w-80 px-3  outline-none border-b-2" type="text" id="input" placeholder="Coin ismi girin">
+        <button type="submit" class="px-4 py-2  bg-pc text-slate-50 block mx-auto mt-5 rounded-lg">Ara</button>
+      </form>
+      <div id="box" class="flex h-28 mx-auto lg:mx-0 xl:px-40">
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
